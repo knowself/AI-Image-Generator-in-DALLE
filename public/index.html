@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/spinner.css" />
+
+    <script src="js/main.js" defer></script>
+    <title>OpenAI DALL-Ev2 Image Generator API Demonstration in NodeJS</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <h2>OpenAI DALL-Ev2 Image Generator API Demonstration in NodeJS</h2>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li>
+              <a href="https://beta.openai.com/docs" target="_blank"
+                >OpenAI API Docs</a
+              >
+            </li>
+            <li>
+              <a href="https://prompthero.com/" target="_blank"
+                >PromptHero</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+<center><p>Thanks to Brad Traversy for his excellent <a href="https://youtu.be/fU4o_BKaUZE" target="_blank">Youtube Video</a> that illustrates how to call OpenAI APIs with Javascript and therefore nodejs. Powerful.<br>Check out the PrompHero Link in the upper right corner and try some DALLE prompts!</p></center>
+    <main>
+      <section class="image">
+        <div class="image-container">
+          <h2 class="msg"></h2>
+          <img src="" alt="" id="image" />
+        </div>
+      </section>
+
+      <section class="showcase">
+        <form id="image-form">
+          <h1>Describe An Image</h1>
+          <div class="form-control">
+
+            </p><label for="prompt">DALL-Ev2 Prompt:</label></p>
+            <textarea id="prompt" name="prompt" rows="6" cols="43">
+            </textarea>
+
+          </div>
+          <!-- size -->
+          <div class="form-control">
+          </p><label for="size">Size:</label></p>
+          <select name="size" id="size">
+              <option value="small">Small</option>
+              <option value="medium" selected>Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Generate</button>
+        </form>
+      </section>
+
+    </main>
+
+    <center><p> <b><a href="https://www.DerivativeGenius.com" target="_blank">Brought to you by Derivative Genius</a></b></p></center>
+
+    <div class="spinner"></div>
+
+  </body>
+</html>
