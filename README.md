@@ -8,8 +8,6 @@ This is a simple image generator built with Node.js and Express that uses [OpenA
 
 ## Usage
 
-Rename the `example.env` file to `.env`.
-
 Generate an API KEY at [OpenAI](https://beta.openai.com/) and add it to the `.env` file with the key "OPENAI_API_KEY"
 
 Install the dependencies
